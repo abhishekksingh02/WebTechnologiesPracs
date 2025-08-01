@@ -41,3 +41,14 @@ function countVowels(str){
     console.log("No of vowels in string Abhishek is: ",count);
 }
 console.log(countVowels("Abhishek"));
+
+//forEach loop in Arrays in js
+/*
+    arr.forEach(callBackFuntion) 
+    forEach function can be called Higher order functions or methods as well 
+    callBackFunction: here, it is a function to execute for each element in array
+    a callBack is a funtion. passed to an arguement to another function
+    eg: arr.forEach((val) =>{
+        console.log(val);
+     })  
+ */
