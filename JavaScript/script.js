@@ -6,7 +6,7 @@
   Decreement: --
 
 */
-let a=10;
+/*let a=10;
 let b = 10;
 console.log("a = ", a , "and" , "b = ", b)
 console.log("Addition of a and b is: ",a+b);
@@ -22,8 +22,8 @@ let d=5;
 let e="5";
 console.log("d==e",d==e);//It will return true becoz in js first it will convert it into a number and then it will compare.
 console.log("d==e",d===e);//It will check the data types as well so in this it will return false
-
-//Logical Operators
+*/
+// /Logical Operators
 /*
     Logical AND &&:
     True, True = True
@@ -42,7 +42,7 @@ console.log("d==e",d===e);//It will check the data types as well so in this it w
  */
 
 //Conditional Statements:
-let age=25;
+//let age=25;
 // if(age>18){
 //     console.log("You can vote");
 // }
@@ -51,8 +51,8 @@ let age=25;
 // }
 
 //Ternary operator: condition?true output : false output
-let ans = age>18?"You can vote":"You cannot vote"; 
-console.log(ans);
+//let ans = age>18?"You can vote":"You cannot vote"; 
+// console.log(ans);
 
 //Practice question:
 // alert("Hello from using alert in JS");
@@ -72,7 +72,8 @@ console.log(ans);
      50-59: D
      0-49: F
  */
-let stuScore = prompt("Enter student score to check Grade:")
+/*let stuScore = prompt("Enter student score to check Grade:")
+
 if(stuScore>=90 && stuScore<=100){
   console.log("Your grade is: A");
 }
@@ -90,4 +91,5 @@ else if(stuScore>=0 && stuScore<=49){
 }
 else{
   console.log("ENTER VALID MARKS!!!!");
-}
+}*/
+
