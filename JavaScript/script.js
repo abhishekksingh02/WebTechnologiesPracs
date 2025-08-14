@@ -93,3 +93,11 @@ else{
   console.log("ENTER VALID MARKS!!!!");
 }*/
 
+console.log("Hello");
+alert("Hello This is Abhishek");
+
+/**
+ * Window object: 
+   This window obeject represent open window in a browser. It is browsers object(not JS)
+   and is automatically created by browser. It is global object with lots of properties and methods.
+ */
