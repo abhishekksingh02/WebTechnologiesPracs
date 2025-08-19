@@ -94,10 +94,46 @@ else{
 }*/
 
 console.log("Hello");
-alert("Hello This is Abhishek");
+// alert("Hello This is Abhishek");
+// console.log(window);
 
 /**
  * Window object: 
    This window obeject represent open window in a browser. It is browsers object(not JS)
    and is automatically created by browser. It is global object with lots of properties and methods.
+
+   When a web page is loaded, the browser creates a Document Object Model(DOM) of the page.
+
+   console.log() --> To print normal debugs
+   console.dir() --> To print the document and properties of method
+   
+   DOM Manipulation
+   1) Selecting with id:
+   --> document.getElementById("myId")
+   2) Selecting with class:
+   --> document.getElementByClassName("myClass")
+   3) Selecting with tags:
+   --> document.getElemtByTagName("p")
  */
+
+  // let heading =  document.getElementById("Heading");
+  // console.dir(heading); //if no element id present and if we try to access them it will print null
+
+  // let heading2 = document.getElementsByClassName("Heading-Class");
+  // console.dir(heading2); //getElementByClassName prints in array, let's suppose we try to access class which is not present it will print length = 0
+
+  let paragraph = document.getElementsByTagName("p");
+  console.dir(paragraph);
+
+  let firstEl = document.querySelector("p"); // querySelector returns NodeLists
+  //querySelector return the first element 
+  console.dir(firstEl);
+
+  let allEl = document.querySelectorAll("p"); //querySelectorAll returns each and every element
+  console.dir(allEl);
+
+  let classFirst = document.querySelectorAll(".Heading-Class"); //querySelectorAll returns each and every element
+  console.dir(allEl);
+
+  let classAll = document.querySelectorAll(".Heading-Class"); //querySelectorAll returns each and every element
+  console.dir(classAll);
