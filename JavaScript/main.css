@@ -1,10 +1,10 @@
 html{
     font-size: 22px;
 }
-body{
+/* body{
     background-color: black;
-    color: whitesmoke;
-}
+    
+} */
 h1{
     color: skyblue;
     font-style: italic;
@@ -21,4 +21,23 @@ p{
     margin: 5px;
     text-align: center;
     background-color: skyblue;
+}
+.newClass{
+    color: skyblue;
+    font-style: italic;
+}
+div{
+    height:100px;
+    width:100 px;
+    background-color: skyblue;
+    color: white;
+    border: 1px solid black;
+}
+.light{
+    background-color: white;
+    color: black;
+}
+.dark{
+    background-color: black;
+    color: white;
 }

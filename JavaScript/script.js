@@ -150,16 +150,35 @@ console.log("Hello");
   // console.log(div.innerHTML);
   // console.log(div.textContent);
 
-  let h2 = document.querySelector("h2");
-  console.dir(h2);
-  console.dir(h2.innerText);
-  h2.innerText = h2.innerText + " From Abhishek prac session";
-  console.dir(h2.innerText);
+  // let h2 = document.querySelector("h2");
+  // console.dir(h2);
+  // console.dir(h2.innerText);
+  // h2.innerText = h2.innerText + " From Abhishek prac session";
+  // console.dir(h2.innerText);
 
-  let divs = document.querySelectorAll(".box");
-  console.log(divs);
-  let idx = 1;
-  for(div of divs){
-    div.innerText = `New unique value ${idx}`;
-    idx++;
-  }
+  // let divs = document.querySelectorAll(".box");
+  // console.log(divs);
+  // let idx = 1;
+  // for(div of divs){
+  //   div.innerText = `New unique value ${idx}`;
+  //   idx++;
+  // }
+
+  //Insert elements  
+  let newBtn = document.createElement("button");
+  newBtn.innerText = "Click Me";
+  newBtn.style.color = "white";
+  newBtn.style.backgroundColor = "red";
+  document.querySelector("body").append(newBtn);
+  
+  // let div = document.querySelector("div");
+  // div.append(newBtn);
+  // div.prepend(newBtn);
+  // div.before(newBtn);
+  // div.after(newBtn);
+
+  // let newHeading = document.createElement("h2");
+  // newHeading.innerHTML="<i>This is new heading</i>";
+  // document.querySelector("body").prepend(newHeading);
+  let para = document.querySelector("p");
+  para.getAttribute("class");
