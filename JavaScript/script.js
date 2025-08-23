@@ -114,6 +114,12 @@ console.log("Hello");
    --> document.getElementByClassName("myClass")
    3) Selecting with tags:
    --> document.getElemtByTagName("p")
+   4) innerText :
+   --> Returns the text contents of the element and all its children
+   5) innerHTML : 
+   --> Returns the plain text or HTML content in the element
+   6) textContent: 
+   --> Returns textual content even for the hidden elements 
  */
 
   // let heading =  document.getElementById("Heading");
@@ -122,18 +128,38 @@ console.log("Hello");
   // let heading2 = document.getElementsByClassName("Heading-Class");
   // console.dir(heading2); //getElementByClassName prints in array, let's suppose we try to access class which is not present it will print length = 0
 
-  let paragraph = document.getElementsByTagName("p");
-  console.dir(paragraph);
+  // let paragraph = document.getElementsByTagName("p");
+  // console.dir(paragraph);
 
-  let firstEl = document.querySelector("p"); // querySelector returns NodeLists
-  //querySelector return the first element 
-  console.dir(firstEl);
+  // let firstEl = document.querySelector("p"); // querySelector returns NodeLists
+  // //querySelector return the first element 
+  // console.dir(firstEl);
 
-  let allEl = document.querySelectorAll("p"); //querySelectorAll returns each and every element
-  console.dir(allEl);
+  // let allEl = document.querySelectorAll("p"); //querySelectorAll returns each and every element
+  // console.dir(allEl);
 
-  let classFirst = document.querySelectorAll(".Heading-Class"); //querySelectorAll returns each and every element
-  console.dir(allEl);
+  // let classFirst = document.querySelectorAll(".Heading-Class"); //querySelectorAll returns each and every element
+  // console.dir(allEl);
 
-  let classAll = document.querySelectorAll(".Heading-Class"); //querySelectorAll returns each and every element
-  console.dir(classAll);
+  // let classAll = document.querySelectorAll(".Heading-Class"); //querySelectorAll returns each and every element
+  // console.dir(classAll);
+
+  // let div = document.querySelector("div");
+  // console.dir(div);
+  // console.log(div.innerText);
+  // console.log(div.innerHTML);
+  // console.log(div.textContent);
+
+  let h2 = document.querySelector("h2");
+  console.dir(h2);
+  console.dir(h2.innerText);
+  h2.innerText = h2.innerText + " From Abhishek prac session";
+  console.dir(h2.innerText);
+
+  let divs = document.querySelectorAll(".box");
+  console.log(divs);
+  let idx = 1;
+  for(div of divs){
+    div.innerText = `New unique value ${idx}`;
+    idx++;
+  }
