@@ -79,3 +79,18 @@ promise.then((res)=>{
 promise.catch((err)=>{
     console.log("Rejected",err);
 })
+
+function asynFunc(){
+    return new promise((resolve,reject)=>{
+        setTimeout(() => {
+            console.log("Data1");
+            resolve("Success");
+        }, 4000);
+    });
+}
+
+console.log("Fetching data....");
+let p1 = new promise();
+p1.then((res)=>{
+    console.log(res);
+});
