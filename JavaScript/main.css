@@ -1,43 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4b4ba;
+}
+h2{
+    text-align: center;
+    font-style: italic;
+}
+.container{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 45vh;
+    min-width: 40vh;
+}
+form{
+    margin: 2rem 0 1rem 0;
+}
+form select,button,input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+form input{
+    border: 1px solid lightgray;
+    font-size: 1rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+}
+.dropdown i{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.dropdown{
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.select-container img{
+    font-size: 2rem;
+}
+.select-container {
+    display: flex;
+    justify-content: center;
+    width: 6rem;
+    border-radius: 0.75rem;
+    border: 1px solid lightgray;
+    /* background-color: red; */
+}
+.select-container select{
+    font-size: 1rem;
+    width: auto;
+}
+.msg{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
 html{
     font-size: 22px;
 }
-/* body{
-    background-color: black;
-    
-} */
-h1{
-    color: skyblue;
+h2{
+    color: black;
+    font: italic;
+}
+form button{
+    color: white;
+    height: 3rem;
+    border-radius: 0.75rem;
+    background-color: #af4d9f;
+    font-size: 1rem;
     font-style: italic;
+    cursor: pointer;
+}
+.amount{
+    font-style: italic;
+    text-align: center;
 }
 p{
-    color: skyblue;
-    font-style: italic;
-}
-.box{
-     
-    height: 100px;
-    width: 100px;
-    border: 1px solid black;
-    margin: 5px;
-    text-align: center;
-    background-color: skyblue;
-}
-.newClass{
-    color: skyblue;
-    font-style: italic;
-}
-div{
-    height:100px;
-    width:100 px;
-    background-color: skyblue;
-    color: white;
-    border: 1px solid black;
-}
-.light{
-    background-color: white;
     color: black;
+    font: italic;
 }
-.dark{
-    background-color: black;
-    color: white;
+.msg{
+    color: black;
+    font: italic;
 }

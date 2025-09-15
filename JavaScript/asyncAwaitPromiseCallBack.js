@@ -4,7 +4,7 @@
     Each instruction wait for the previous instruction to complete its execution
 
     Asynchronous:
-    Due to synchronous programming sometimes imp instructions get blocked due to some prevous instructions
+    Due to synchronous programming sometimes imp instructions get blocked due to some previ   ous instructions
     which causes a delay in the UI. Asynchronous code execution allows to execute next instruction immediately
     and doesnt block the flow
  */
@@ -94,3 +94,19 @@ let p1 = new promise();
 p1.then((res)=>{
     console.log(res);
 });
+/**
+ * Asyn-Await(Most used practice when dealing Data Object Manipulation)
+   Async function always returns a promise
+   Await pauses the execution of its surroundings async function until the promise is settled
+ */
+function api(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(() => {
+            console.log("Weather Data");
+            resolve(200);
+        }, 2000);
+    });
+}
+async function weatherData(){
+    await api();// 1st call
+}
